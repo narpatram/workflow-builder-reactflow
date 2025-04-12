@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
-import Layout from './components/Layout/Layout';
+import Layout from './layouts/Layout';
 import WorkflowBuilder from './components/WorkflowBuilder/WorkflowBuilder';
 import Visualization from './components/Visualization/Visualization';
 import { ThemeProvider } from '@mui/material/styles';

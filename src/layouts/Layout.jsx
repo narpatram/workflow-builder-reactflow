@@ -3,23 +3,15 @@ import { styled } from '@mui/material/styles';
 import {
   Box,
   Drawer,
-  AppBar,
-  Toolbar,
-  Typography,
   IconButton,
-  Tabs,
-  Tab,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
-  Divider,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import BarChartIcon from '@mui/icons-material/BarChart';
-import logo from '../../assets/header_logo.png';
 
 const drawerWidth = 240;
 const miniDrawerWidth = 80;
@@ -52,7 +44,6 @@ const Layout = ({ children, activeTab, onTabChange }) => {
 
   return (
     <Box sx={{ display: 'flex' }}>
-
       <Drawer
         variant="permanent"
         sx={{
@@ -79,7 +70,6 @@ const Layout = ({ children, activeTab, onTabChange }) => {
         >
           <MenuIcon />
         </IconButton>
-        
 
         <List sx={{ marginTop: "40px" }}>
           <ListItem 
@@ -127,7 +117,7 @@ const Layout = ({ children, activeTab, onTabChange }) => {
         </List>
       </Drawer>
 
-      <Main open={open} sx={{ marginLeft: "0px", marginTop: "0px" }}   >
+      <Main open={open} sx={{ marginLeft: "0px", marginTop: "0px" }}>
         {children}
       </Main>
     </Box>
